@@ -3,45 +3,108 @@
     {
       "id": 1,
       "name": "札幌競馬場",
-      "start": { "month": 3, "week": 2 },
-      "end":   { "month": 10, "week": 4 }
+      "memo": "北海道を代表する競馬場"
     },
     {
       "id": 2,
-      "name": "門別競馬場",
-      "start": { "month": 2, "week": 4 },
-      "end":   { "month": 11, "week": 2 }
+      "name": "函館競馬場",
+      "memo": "夏季のみ開催"
+    }
+  ],
+  "venue_periods": [
+    {
+      "id": 1,
+      "venueId": 1,
+      "startMonth": 5,
+      "startWeek": 2,
+      "endMonth": 6,
+      "endWeek": 4,
+      "memo": "春シーズン"
+    },
+    {
+      "id": 2,
+      "venueId": 1,
+      "startMonth": 9,
+      "startWeek": 1,
+      "endMonth": 10,
+      "endWeek": 3,
+      "memo": "秋シーズン"
     },
     {
       "id": 3,
-      "name": "札幌競馬場",
-      "start": {"month": 11, "week": 1},
-      "end": { "month": 12, "week": 4}
+      "venueId": 2,
+      "startMonth": 7,
+      "startWeek": 2,
+      "endMonth": 8,
+      "endWeek": 4,
+      "memo": "夏季限定"
+    },
+    {
+      "id": 4,
+      "venueId": 2,
+      "startMonth": 9,
+      "startWeek": 1,
+      "endMonth": 10,
+      "endWeek": 2,
+      "memo": "秋季短期開催"
+    }
   ],
   "races": [
     {
       "id": 1,
-      "name": "札幌大賞典",
+      "venueId": 1,
+      "name": "北日本ダービー",
       "surface": "ダート",
-      "direction": "左回り",
+      "direction": "右",
       "distance": 2000,
-      "ageRestriction": "3歳以上",
-      "sexRestriction": "なし",
-      "monthWeek": { "month": 12, "week": 1 },
-      "notes": "年末の重賞",
-      "venueId": 1
+      "ageLimit": "3歳以上",
+      "sexLimit": null,
+      "grade": "G1",
+      "month": 5,
+      "week": 3,
+      "memo": "伝統のクラシック競走"
     },
     {
       "id": 2,
-      "name": "門別金杯",
+      "venueId": 1,
+      "name": "札幌記念",
       "surface": "芝",
-      "direction": "右回り",
-      "distance": 1600,
-      "ageRestriction": "4歳以上",
-      "sexRestriction": "なし",
-      "monthWeek": { "month": 1, "week": 2 },
-      "notes": "",
-      "venueId": 2
+      "direction": "右",
+      "distance": 1800,
+      "ageLimit": "3歳以上",
+      "sexLimit": null,
+      "grade": "G2",
+      "month": 6,
+      "week": 2,
+      "memo": "夏季の重賞"
+    },
+    {
+      "id": 3,
+      "venueId": 2,
+      "name": "函館スプリントS",
+      "surface": "芝",
+      "direction": "左",
+      "distance": 1200,
+      "ageLimit": "3歳以上",
+      "sexLimit": null,
+      "grade": "G3",
+      "month": 7,
+      "week": 3,
+      "memo": "短距離重賞"
+    },
+    {
+      "id": 4,
+      "venueId": 2,
+      "name": "函館記念",
+      "surface": "芝",
+      "direction": "左",
+      "distance": 2000,
+      "ageLimit": "3歳以上",
+      "sexLimit": null,
+      "grade": "G3",
+      "month": 8,
+      "week": 2,
+      "memo": "夏の芝中距離"
     }
   ]
 }
