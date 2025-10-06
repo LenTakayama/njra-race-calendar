@@ -1,0 +1,47 @@
+{
+  "venues": [
+    {
+      "id": 1,
+      "name": "札幌競馬場",
+      "start": { "month": 3, "week": 2 },
+      "end":   { "month": 10, "week": 4 }
+    },
+    {
+      "id": 2,
+      "name": "門別競馬場",
+      "start": { "month": 2, "week": 4 },
+      "end":   { "month": 11, "week": 2 }
+    },
+    {
+      "id": 3,
+      "name": "札幌競馬場",
+      "start": {"month": 11, "week": 1},
+      "end": { "month": 12, "week": 4}
+  ],
+  "races": [
+    {
+      "id": 1,
+      "name": "札幌大賞典",
+      "surface": "ダート",
+      "direction": "左回り",
+      "distance": 2000,
+      "ageRestriction": "3歳以上",
+      "sexRestriction": "なし",
+      "monthWeek": { "month": 12, "week": 1 },
+      "notes": "年末の重賞",
+      "venueId": 1
+    },
+    {
+      "id": 2,
+      "name": "門別金杯",
+      "surface": "芝",
+      "direction": "右回り",
+      "distance": 1600,
+      "ageRestriction": "4歳以上",
+      "sexRestriction": "なし",
+      "monthWeek": { "month": 1, "week": 2 },
+      "notes": "",
+      "venueId": 2
+    }
+  ]
+}
