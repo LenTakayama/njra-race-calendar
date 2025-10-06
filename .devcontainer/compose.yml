@@ -1,0 +1,23 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    ports:
+      - "5173:5173"
+    depends_on:
+      - json-server
+
+  json-server:
+    image: node:22.20
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
+    command: >
+      sh -c "npm install -g json-server &&
+             json-server --watch db.json --port 3001 --host 0.0.0.0"
+    ports:
+      - "3001:3001"
